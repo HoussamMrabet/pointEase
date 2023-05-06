@@ -1,16 +1,21 @@
 import React from 'react'
 
-import { Content, SideBar } from '../../components/dashboard';
+import { NavBar, Content, SideBar } from '../../components/dashboard';
+
+import "./dashboard.css";
 
 const Dashboard = () => {
   return (
-    <div className="row justify-content-center" style={{ width: "100%" }}>
-        <div className="col-lg-1 text-center">
-            <SideBar />
-        </div>
-        <div className="col">
-            <Content />
-        </div>
+    <div className='dashboard'>
+      <NavBar />
+      <div className="row justify-content-center" style={{ width: "100vw" }}>
+          <div className="col-md-1 text-lg-center d-none d-lg-block">
+              <SideBar />
+          </div>
+          <div className="col">
+              <Content />
+          </div>
+      </div>
     </div>
   )
 }

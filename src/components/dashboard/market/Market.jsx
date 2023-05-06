@@ -1,13 +1,11 @@
 import React from 'react';
 
-import { BsFillCartPlusFill } from "react-icons/bs";
-
 import './market.css';
 
 const Market = () => {
   return (
     <div className='px-4 py-lg-4'>
-        <div className="title mb-5">
+        <div className="title mb-5 mt-5 mt-lg-0">
           <h1>Making Orders</h1>
           <small class="text-muted">Today, 20 Mar 2021, 02:34 PM</small>
         </div>

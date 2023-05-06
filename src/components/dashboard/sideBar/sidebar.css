@@ -12,13 +12,13 @@
     }
     
     .sidebar-items:hover{
-        color: rgb(50, 50, 246);
+        color: rgb(43, 97, 198);
         cursor: pointer;
     }
     
-    .active{
-        color: rgb(50, 50, 246);
-        border-right: 3px solid rgb(50, 50, 246);
+    .sidebar-items.active{
+        color: rgb(43, 97, 198);
+        border-right: 3px solid rgb(43, 97, 198);
     }
 
 }

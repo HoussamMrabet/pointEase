@@ -1,0 +1,16 @@
+.navbar{
+    background-color: #fafafa;
+    box-shadow: 1px 0 10px 1px rgba(0, 0, 255, .1);
+}
+
+.nav-items:hover{
+    color: rgb(43, 97, 198);
+    cursor: pointer;
+    border-bottom: 3px solid rgb(43, 97, 198);
+}
+
+.nav-items.active{
+    color: rgb(43, 97, 198);
+    border-bottom: 3px solid rgb(43, 97, 198);
+}
+
