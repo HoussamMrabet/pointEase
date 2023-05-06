@@ -1,0 +1,11 @@
+@media screen and (min-width: 600px) {
+    .cart{
+        position: sticky;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        overflow-y: hidden;
+        box-shadow: -5px 0 10px 1px rgba(0, 0, 255, .1);
+    }    
+}
+
