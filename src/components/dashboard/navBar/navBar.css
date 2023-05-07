@@ -1,6 +1,7 @@
 .navbar{
     background-color: #fafafa;
     box-shadow: 1px 0 10px 1px rgba(0, 0, 255, .1);
+    padding: 0 !important;
 }
 
 .nav-items:hover{

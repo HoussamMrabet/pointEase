@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { AiFillAppstore, AiFillDashboard, AiFillSetting, AiOutlineShoppingCart } from 'react-icons/ai';
+import { AiFillAppstore, AiFillDashboard, AiFillSetting } from 'react-icons/ai';
 import { FiPackage } from 'react-icons/fi';
 import { CgLogOut } from 'react-icons/cg';
 
@@ -19,8 +19,7 @@ const NavBar = () => {
         </div>
 
         <div className='d-flex col-2'>
-            <div className="nav-items p-2"><AiOutlineShoppingCart /></div>
-            <div className="nav-items p-2"><CgLogOut /></div>
+            <div className="nav-items py-2"><CgLogOut /></div>
         </div>
     </div>
   )
