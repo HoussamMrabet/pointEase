@@ -18,12 +18,12 @@ const Cart = () => {
                 <small className="title">
                   Cheese Burger
                 </small>
-                <span class="badge text-bg-secondary" style={{width:"50px"}}>$5.99</span>
+                <span className="badge text-bg-secondary" style={{width:"50px"}}>$5.99</span>
               </div>
               <div className="counter d-flex align-items-center text-center col">
-                <span class="setCount decrement">-</span>
+                <span className="setCount decrement">-</span>
                 <span className='itemCount mx-2'>4</span>
-                <span class="setCount increment">+</span>
+                <span className="setCount increment">+</span>
               </div>
             </div>
           </div>
@@ -39,8 +39,8 @@ const Cart = () => {
             <h5 className='totalPrice' style={{textAlign: "right"}}>$23.96</h5>
           </div>
           <hr />
-          <button type="button" class="btn btn-primary mb-1">Pay Now</button>
-          <button type="button" class="btn btn-light">Cancel</button>
+          <button type="button" className="btn btn-primary mb-1">Pay Now</button>
+          <button type="button" className="btn btn-light">Cancel</button>
         </div>
     </div>
   )

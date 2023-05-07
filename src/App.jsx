@@ -1,12 +1,14 @@
 import React from 'react'
 
+import { ProductProvider } from './context/ProductsContext';
 import { Dashboard } from './pages';
 
 const App = () => {
+
   return (
-    <div>
+    <ProductProvider>
         <Dashboard />
-    </div>
+    </ProductProvider>
   )
 }
 
