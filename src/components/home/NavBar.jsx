@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineHome, AiOutlineUser, AiOutlinePhone} from "react-icons/ai";
 import { CgFileDocument } from "react-icons/cg";
 
@@ -11,6 +11,7 @@ import { CgFileDocument } from "react-icons/cg";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const navigate = useNavigate();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -84,8 +85,8 @@ function NavBar() {
 
             <Nav.Item className="fork-btn">
               <Button
-                to="/Login"
                 className="btn-inner"
+                onClick={()=>navigate('/login')}
               >
                 se connecter
               </Button>
