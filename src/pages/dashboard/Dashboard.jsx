@@ -2,7 +2,7 @@ import React from 'react'
 
 import { NavBar, Content, SideBar } from '../../components/dashboard';
 
-import "./dashboard.css";
+import "./dashboard.scss";
 
 const Dashboard = () => {
   return (
