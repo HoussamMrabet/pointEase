@@ -1,23 +1,23 @@
-import React from 'react'
+import React from 'react';
 
-import { NavBar, SideBar, DashboardContent } from '../../components/pos';
+import { NavBar, SideBar, SettingsContent } from '../../components/pos';
 
 import "../posApp.scss";
 
-const Dashboard = () => {
+const Settings = () => {
   return (
     <div className='posApp'>
       <NavBar />
       <div className="row justify-content-center" style={{ width: "100vw" }}>
           <div className="col-md-1 text-lg-center d-none d-lg-block">
-              <SideBar active={"dashboard"}/>
+              <SideBar active={"settings"}/>
           </div>
           <div className="col">
-              <DashboardContent />
+              <SettingsContent />
           </div>
       </div>
     </div>
   )
 }
 
-export default Dashboard
+export default Settings

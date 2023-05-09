@@ -55,10 +55,10 @@ const Cart = ({order, setOrder}) => {
 
   return (
     <div className="cart d-flex flex-column justify-content-between p-5 p-lg-3">
-        <div className='d-flex flex-column' style={{overflowY: "hidden"}}>
+        <div className='d-flex flex-column p-1' style={{overflowY: "hidden"}}>
           <h4 className="cart-title">Order</h4>
           <hr />
-          <div className="cart-products">
+          <div className="cart-products p-1">
             {order.map((item, index)=>(
               <div key={index} className="item d-flex">
                 <img className='col-1' draggable="false" src={item.image} alt={item.name}/>
@@ -80,13 +80,13 @@ const Cart = ({order, setOrder}) => {
             ))}
           </div>
         </div>
-        <div className='d-flex flex-column'>
+        <div className='d-flex flex-column p-1'>
           <hr />
-          <div className='totalItems d-flex justify-content-between'>
+          <div className='totalItems d-flex justify-content-between p-1'>
             <h6>Total Items:</h6>
             <h6 className="countItems" style={{textAlign: "right"}}>{order.reduce((totalPrice, item)=>{return totalPrice + item.count},0)}(items)</h6>
           </div>
-          <div className="total d-flex justify-content-between">
+          <div className="total d-flex justify-content-between p-1">
             <h5>Total:</h5>
             <h5 className='totalPrice' style={{textAlign: "right"}}>${order.reduce((totalPrice, item)=>{return totalPrice + item.price*item.count},0).toFixed(2)}</h5>
           </div>

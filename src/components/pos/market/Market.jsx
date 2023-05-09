@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { ProductContext } from '../../../context/ProductsContext';
+import getDate from '../../../utils/getDate';
 
 import './market.css';
 
@@ -32,7 +33,7 @@ const Market = ({order, setOrder}) => {
     <div className='px-4 py-lg-4'>
         <div className="title mb-5 mt-5 mt-lg-0">
           <h1>Making Orders</h1>
-          <small className="text-muted">Today, 20 Mar 2021, 02:34 PM</small>
+          <small className="text-muted">{getDate()}</small>
         </div>
 
         <div className="categories d-flex flex-wrap mb-5">

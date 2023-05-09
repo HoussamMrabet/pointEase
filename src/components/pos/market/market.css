@@ -3,7 +3,7 @@
 }
 
 .card .card-img-top {
-    object-fit: cover;
+    object-fit: fill;
     height: 150px;
 }
 
